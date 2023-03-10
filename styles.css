@@ -1,0 +1,150 @@
+:root{
+  --color-darkblue:#1b1b32;
+  --color-darkblue-alpha:rgba(27, 27, 50, 0.8);
+
+}
+body{
+padding: 0;
+margin: 0;
+width: auto;
+height: 180vh;
+background: var(--color-darkblue);
+background-image:linear-gradient(115deg, rgba(58, 58, 158, 0.8),rgba(136, 136, 206, 0.7)),
+url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Poppins',sans-serif;
+
+}
+
+header{
+  text-align: center;
+  color: aliceblue;
+  margin-top: 30px;
+}
+#title{
+ font-size: 34px;
+}
+#description{
+  font-size: 23;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+label{
+  display:block;
+  color: aliceblue;
+  font-size: 22px;
+  
+}
+input{
+  font-size: 21px;
+  margin-top: 9px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+ 
+}
+input[type],textarea,select,option:focus{
+  outline: none;
+  
+}
+select{
+  font-size: 21px;
+  margin-top: 9px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+form{
+  background-color:var(--color-darkblue-alpha);
+  display: block;
+  max-height: 200vh;
+  max-width: fit-content;
+  margin:auto ;
+  padding: 25 25 25 25;
+  border-radius: 5px;
+}
+.form-group{
+  display: block;
+  margin-top: 18px; 
+}
+.form-control{
+  color:#495057;
+}
+.input-checkbox{
+  display: inline-block;
+  min-height: 15px;
+  min-width: 15px;
+  margin-right: 13px;
+
+}
+#name-label input{
+ display: flex;
+ width: 100%;
+ height: 2.5rem;
+ 
+}
+#email-label input{
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+
+}
+#number-label input{
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+
+}
+
+label select {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+}
+#role{
+  font-size: 21px;
+  border-radius: 5px;
+  color: #495057;
+}
+textarea{
+  height: 109px;
+  font-size: 21px;
+  color: #495057;
+  margin: 0;
+}
+label #role{
+  display: flex;
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+label textarea{
+  display: flex;
+  width: 100%;
+  margin-top:18px;
+}
+#submit{
+  width: 100%;
+  height: 45px;
+  margin-top: 12px;
+  background-color: green;
+  font-size: 22px;
+  color: #ffffff;
+  border: #1b1b32; 
+  border-radius: 5px;
+}
+
+.info{
+  background-color: var(--color-darkblue-alpha);
+  color: #ffffff;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 45px;
+}
+.post-data{
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-align:unset;
+}

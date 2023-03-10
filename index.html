@@ -1,0 +1,56 @@
+<!DOCKTYPE html>
+<html>
+<head>
+  <title>Surey Form</title>
+  <link rel="stylesheet" href="./styles.css"></link>
+</head>
+<body>
+<header>
+  <h1 id="title">DEB-EST Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+</header>
+<form id="survey-form" action="insert-form.php" method="post">
+<div class="form-group">
+  <label id="name-label">Name <input name="name" class="form-control" type="text" placeholder="Enter your name" required/></label>
+  <label id="email-label">Email <input name="email" class="form-control" type="email" placeholder="Enter your email"required/></label>
+  <label id="number-label">Age <input name="age" class="form-control" type="number" placeholder="12"min="12"max="120" required/></label>
+</div>
+<div class="form-group">
+  <label id="gender">Your gender please ?
+    <label class="center" ><input name="gender" class="center" type="radio" value="M"/> Male</label>
+    <label class="center" ><input name="gender" class="center" type="radio" value="F"/> Female</label>
+  </label>
+</div>
+<div class="form-group">
+  <label>Which option best describes your current role?
+    <select  name="role" id="role" >
+      <option value="">(choose one option)</option>
+      <option value="Student">Student</option>
+      <option value="Professional">Professional</option>
+      <option value="Freelancer">Freelancer</option>
+     </select>
+  </label>
+</div>
+<div class="form-group">
+  <label>What would you like to see improved? (Check all that apply)
+    <label class="center"><input name="checklist[]" class="input-checkbox" type="checkbox" value="backend"/>Backend</label>
+    <label class="center"><input name="checklist[]" class="input-checkbox" type="checkbox" value="frontend"/>Frontend</label>
+    <label class="center"><input name="checklist[]" class="input-checkbox" type="checkbox" value="disktop-app"/>Disktop app</label>
+    <label class="center"><input name="checklist[]" class="input-checkbox" type="checkbox" value="moblie-app"/>Mobile app</label>
+  </label>
+</div>
+<div class="form-group">
+  <label>
+    How can you describe your self ?
+    <textarea id="bio" name="bio" placeholder="Enter your comment here...">
+    </textarea>
+  </label>
+</div>
+<div class="form-group">
+  <label>
+    <button id="submit" name="submit" type="submit" value="submit">Submit</button>
+  </label>
+</div>  
+</form>
+<body>
+<html>
